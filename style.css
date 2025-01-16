@@ -1,0 +1,32 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #172937;
+    color: white;
+}
+.logoImg{
+    width: 175px;
+    border-radius: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header3{
+    margin-right: 20px;
+}
+
+.header3 a{
+    all:unset;
+    padding: 10px;
+    background-color: rebeccapurple;
+    
+}
+.header3 a:hover{
+    
+}
+h1{
+    text-shadow: 5px 5px 10px rgb(177, 177, 177);
+}
