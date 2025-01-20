@@ -1,4 +1,4 @@
-*{margin:0; padding:0; box-sizing: border-box;}
+*{margin:0; padding:0;}
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #172937;
@@ -14,19 +14,120 @@ header{
     align-items: center;
 }
 
+header div{
+    width: 100%;
+}
+
+.header1{
+    margin-left: 20px;
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
 .header3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
     margin-right: 20px;
 }
 
 .header3 a{
-    all:unset;
+    all: unset;
     padding: 10px;
+    margin: 0 5px;
     background-color: rebeccapurple;
-    
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
 }
 .header3 a:hover{
-    
+    background-color: rgb(113, 101, 126);
 }
 h1{
-    text-shadow: 5px 5px 10px rgb(177, 177, 177);
+    text-shadow: 4px 4px 5px rgb(177, 177, 177);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    all: unset;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+nav a:hover{
+    background-color: rgb(113, 101, 126);
+}
+
+.contenedor{
+    display: grid;
+    justify-items: center;
+    margin: 20px;
+    @media screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        
+    }
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    @media screen and (max-width: 576px){
+        grid-template-columns: 1fr;
+        
+    }
+
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #254157;
+    color: white;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+}
+.imagen{
+    width: 175px;
+    height: 262.5px;
+    border-radius: 0 0 10px 10px;
+}
+.tarjeta h2{
+    margin: 10px 0;
+}
+.tarjeta {
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    background-color: #254157;
+    transition:0.5s;
+}
+.tarjeta p{
+    display: none;
+    transition:0.5s;
+}
+.tarjeta:hover p{
+    display: flex;
+}
+
+.tarjeta:hover{
+    background-color: white;
+    transform: scale(1.1);
+    color: black;
 }
